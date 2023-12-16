@@ -3,8 +3,8 @@ public class Book {
     private double price;
 
     public Book(String bookTitle, double bookPrice) {
-        this.bookTitle = title;
-        this.bookPrice = price;
+        this.title = bookTitle;
+        this.price = bookPrice;
     }
 
     public String getTitle() {
@@ -12,10 +12,7 @@ public class Book {
     }
 
     public String getPrice() {
-        return price;
+        return Double.toString(price);
     }
-    
-    public String getBookInfo() {
-        return title + "-" + price;
-    }
+
 }
